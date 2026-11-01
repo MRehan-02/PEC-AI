@@ -1,0 +1,198 @@
+case_id: case_03
+expected status: COMPLETE
+predicted status: COMPLETE
+expected steps:
+  [OK] (VERIFICATION, VERIFY_RECORD_ABSENT, account_service, account_7566, evidence_94)
+  [OK] (VERIFICATION, VERIFY_RECORD_PRESENT, security_service, audit_record_2016, evidence_94)
+  [MISSING] (VERIFICATION, VERIFY_RECORD_ANONYMIZED, analytics_platform, analytics_9406, evidence_94)
+predicted steps:
+  [OK] (VERIFICATION, VERIFY_RECORD_ABSENT, account_service, account_7566, evidence_94)
+  [OK] (VERIFICATION, VERIFY_RECORD_PRESENT, security_service, audit_record_2016, evidence_94)
+
+case_id: case_04
+expected status: COMPLETE
+predicted status: COMPLETE
+expected steps:
+  [MISSING] (VERIFICATION, VERIFY_RECORD_ABSENT, account_service, account_004, evidence_54)
+  [MISSING] (VERIFICATION, VERIFY_RECORD_ANONYMIZED, analytics_platform, analytics_901, evidence_56)
+predicted steps:
+
+case_id: case_18
+expected status: INCOMPLETE
+predicted status: INCOMPLETE
+expected steps:
+  [OK] (FINDING, REPORT_REMAINING_RECORD, search_service, search_4013, evidence_94)
+  [OK] (FINDING, REPORT_EXPOSED_PII, analytics_platform, analytics_037, evidence_94)
+  [OK] (FINDING, REPORT_EXPOSED_PII, support_platform, support_5569, evidence_94)
+  [OK] (FINDING, REPORT_ACTIVE_DATA_FLOW, integration_service, data_flow_4890, evidence_94)
+  [OK] (REMEDIATION, DISABLE_DATA_FLOW, integration_service, data_flow_4890, )
+  [OK] (REMEDIATION, DELETE_RECORD, search_service, search_4013, )
+  [OK] (REMEDIATION, REDACT_RECORD, support_platform, support_5569, )
+  [OK] (REMEDIATION, ANONYMIZE_RECORD, analytics_platform, analytics_037, )
+  [OK] (VERIFICATION, VERIFY_RECORD_ABSENT, account_service, account_5521, )
+  [OK] (VERIFICATION, VERIFY_RECORD_ABSENT, search_service, search_4013, )
+  [MISSING] (VERIFICATION, VERIFY_RECORD_PRESENT, security_service, audit_record_6645, )
+  [ORDER] (VERIFICATION, VERIFY_RECORD_REDACTED, support_platform, support_5569, )
+  [ORDER] (VERIFICATION, VERIFY_RECORD_ANONYMIZED, analytics_platform, analytics_037, )
+  [ORDER] (VERIFICATION, VERIFY_DATA_FLOW_DISABLED, integration_service, data_flow_4890, )
+predicted steps:
+  [OK] (FINDING, REPORT_REMAINING_RECORD, search_service, search_4013, evidence_94)
+  [OK] (FINDING, REPORT_EXPOSED_PII, analytics_platform, analytics_037, evidence_94)
+  [OK] (FINDING, REPORT_EXPOSED_PII, support_platform, support_5569, evidence_94)
+  [OK] (FINDING, REPORT_ACTIVE_DATA_FLOW, integration_service, data_flow_4890, evidence_94)
+  [OK] (REMEDIATION, DISABLE_DATA_FLOW, integration_service, data_flow_4890, )
+  [OK] (REMEDIATION, DELETE_RECORD, search_service, search_4013, )
+  [OK] (REMEDIATION, REDACT_RECORD, support_platform, support_5569, )
+  [OK] (REMEDIATION, ANONYMIZE_RECORD, analytics_platform, analytics_037, )
+  [OK] (VERIFICATION, VERIFY_RECORD_ABSENT, account_service, account_5521, )
+  [OK] (VERIFICATION, VERIFY_RECORD_ABSENT, search_service, search_4013, )
+  [ORDER] (VERIFICATION, VERIFY_RECORD_REDACTED, support_platform, support_5569, )
+  [ORDER] (VERIFICATION, VERIFY_RECORD_ANONYMIZED, analytics_platform, analytics_037, )
+  [ORDER] (VERIFICATION, VERIFY_DATA_FLOW_DISABLED, integration_service, data_flow_4890, )
+
+case_id: case_20
+expected status: INCOMPLETE
+predicted status: INCOMPLETE
+expected steps:
+  [OK] (FINDING, REPORT_REMAINING_RECORD, search_service, search_4262, evidence_94)
+  [OK] (FINDING, REPORT_ACTIVE_DATA_FLOW, integration_service, data_flow_1770, evidence_94)
+  [OK] (REMEDIATION, DISABLE_DATA_FLOW, integration_service, data_flow_1770, )
+  [OK] (REMEDIATION, DELETE_RECORD, search_service, search_4262, )
+  [OK] (VERIFICATION, VERIFY_RECORD_ABSENT, account_service, account_5037, )
+  [OK] (VERIFICATION, VERIFY_RECORD_ABSENT, search_service, search_4262, )
+  [MISSING] (VERIFICATION, VERIFY_RECORD_PRESENT, security_service, audit_record_5569, )
+  [ORDER] (VERIFICATION, VERIFY_DATA_FLOW_DISABLED, integration_service, data_flow_1770, )
+predicted steps:
+  [OK] (FINDING, REPORT_REMAINING_RECORD, search_service, search_4262, evidence_94)
+  [OK] (FINDING, REPORT_ACTIVE_DATA_FLOW, integration_service, data_flow_1770, evidence_94)
+  [OK] (REMEDIATION, DISABLE_DATA_FLOW, integration_service, data_flow_1770, )
+  [OK] (REMEDIATION, DELETE_RECORD, search_service, search_4262, )
+  [OK] (VERIFICATION, VERIFY_RECORD_ABSENT, account_service, account_5037, )
+  [OK] (VERIFICATION, VERIFY_RECORD_ABSENT, search_service, search_4262, )
+  [ORDER] (VERIFICATION, VERIFY_DATA_FLOW_DISABLED, integration_service, data_flow_1770, )
+
+case_id: case_21
+expected status: COMPLETE
+predicted status: COMPLETE
+expected steps:
+  [OK] (VERIFICATION, VERIFY_RECORD_ABSENT, account_service, account_6440, evidence_92)
+  [OK] (VERIFICATION, VERIFY_RECORD_PRESENT, security_service, audit_record_3737, evidence_92)
+  [MISSING] (VERIFICATION, VERIFY_RECORD_ANONYMIZED, analytics_platform, analytics_5335, evidence_92)
+predicted steps:
+  [OK] (VERIFICATION, VERIFY_RECORD_ABSENT, account_service, account_6440, evidence_92)
+  [OK] (VERIFICATION, VERIFY_RECORD_PRESENT, security_service, audit_record_3737, evidence_92)
+
+case_id: case_23
+expected status: INCOMPLETE
+predicted status: INCOMPLETE
+expected steps:
+  [OK] (FINDING, REPORT_REMAINING_RECORD, export_service, export_7364, evidence_92)
+  [OK] (FINDING, REPORT_REMAINING_RECORD, search_service, search_898, evidence_92)
+  [OK] (REMEDIATION, DELETE_RECORD, export_service, export_7364, )
+  [OK] (REMEDIATION, DELETE_RECORD, search_service, search_898, )
+  [MISSING] (VERIFICATION, VERIFY_RECORD_ABSENT, account_service, account_410, )
+  [ORDER] (VERIFICATION, VERIFY_RECORD_ABSENT, export_service, export_7364, )
+  [ORDER] (VERIFICATION, VERIFY_RECORD_ABSENT, search_service, search_898, )
+  [ORDER] (VERIFICATION, VERIFY_RECORD_PRESENT, security_service, audit_record_4128, )
+predicted steps:
+  [OK] (FINDING, REPORT_REMAINING_RECORD, export_service, export_7364, evidence_92)
+  [OK] (FINDING, REPORT_REMAINING_RECORD, search_service, search_898, evidence_92)
+  [OK] (REMEDIATION, DELETE_RECORD, export_service, export_7364, )
+  [OK] (REMEDIATION, DELETE_RECORD, search_service, search_898, )
+  [ORDER] (VERIFICATION, VERIFY_RECORD_ABSENT, export_service, export_7364, )
+  [ORDER] (VERIFICATION, VERIFY_RECORD_ABSENT, search_service, search_898, )
+  [ORDER] (VERIFICATION, VERIFY_RECORD_PRESENT, security_service, audit_record_4128, )
+
+case_id: case_25
+expected status: COMPLETE
+predicted status: COMPLETE
+expected steps:
+  [OK] (VERIFICATION, VERIFY_RECORD_ABSENT, account_service, account_3136, evidence_92)
+  [OK] (VERIFICATION, VERIFY_RECORD_PRESENT, security_service, audit_record_451, evidence_92)
+  [MISSING] (VERIFICATION, VERIFY_RECORD_ANONYMIZED, analytics_platform, analytics_1895, evidence_92)
+predicted steps:
+  [OK] (VERIFICATION, VERIFY_RECORD_ABSENT, account_service, account_3136, evidence_92)
+  [OK] (VERIFICATION, VERIFY_RECORD_PRESENT, security_service, audit_record_451, evidence_92)
+
+case_id: case_26
+expected status: COMPLETE
+predicted status: COMPLETE
+expected steps:
+  [OK] (VERIFICATION, VERIFY_RECORD_ABSENT, account_service, account_5684, evidence_92)
+  [OK] (VERIFICATION, VERIFY_RECORD_PRESENT, security_service, audit_record_5416, evidence_92)
+  [OK] (VERIFICATION, VERIFY_RECORD_REDACTED, support_platform, support_4715, evidence_92)
+  [MISSING] (VERIFICATION, VERIFY_RECORD_ANONYMIZED, analytics_platform, analytics_4566, evidence_92)
+  [ORDER] (VERIFICATION, VERIFY_DATA_FLOW_DISABLED, integration_service, data_flow_6244, evidence_92)
+  [ORDER] (VERIFICATION, VERIFY_RESTORE_BLOCKED, backup_service, backup_3120, evidence_92)
+predicted steps:
+  [OK] (VERIFICATION, VERIFY_RECORD_ABSENT, account_service, account_5684, evidence_92)
+  [OK] (VERIFICATION, VERIFY_RECORD_PRESENT, security_service, audit_record_5416, evidence_92)
+  [OK] (VERIFICATION, VERIFY_RECORD_REDACTED, support_platform, support_4715, evidence_92)
+  [ORDER] (VERIFICATION, VERIFY_DATA_FLOW_DISABLED, integration_service, data_flow_6244, evidence_92)
+  [ORDER] (VERIFICATION, VERIFY_RESTORE_BLOCKED, backup_service, backup_3120, evidence_92)
+
+case_id: case_27
+expected status: COMPLETE
+predicted status: COMPLETE
+expected steps:
+  [OK] (VERIFICATION, VERIFY_RECORD_ABSENT, account_service, account_3866, evidence_92)
+  [OK] (VERIFICATION, VERIFY_RECORD_PRESENT, security_service, audit_record_3830, evidence_92)
+  [OK] (VERIFICATION, VERIFY_RECORD_REDACTED, support_platform, support_4707, evidence_92)
+  [MISSING] (VERIFICATION, VERIFY_RECORD_ANONYMIZED, analytics_platform, analytics_4574, evidence_92)
+  [ORDER] (VERIFICATION, VERIFY_DATA_FLOW_DISABLED, integration_service, data_flow_2295, evidence_92)
+  [ORDER] (VERIFICATION, VERIFY_RESTORE_BLOCKED, backup_service, backup_5970, evidence_92)
+predicted steps:
+  [OK] (VERIFICATION, VERIFY_RECORD_ABSENT, account_service, account_3866, evidence_92)
+  [OK] (VERIFICATION, VERIFY_RECORD_PRESENT, security_service, audit_record_3830, evidence_92)
+  [OK] (VERIFICATION, VERIFY_RECORD_REDACTED, support_platform, support_4707, evidence_92)
+  [ORDER] (VERIFICATION, VERIFY_DATA_FLOW_DISABLED, integration_service, data_flow_2295, evidence_92)
+  [ORDER] (VERIFICATION, VERIFY_RESTORE_BLOCKED, backup_service, backup_5970, evidence_92)
+
+case_id: case_28
+expected status: COMPLETE
+predicted status: COMPLETE
+expected steps:
+  [MISSING] (VERIFICATION, VERIFY_RECORD_ABSENT, account_service, account_5482, evidence_92)
+  [ORDER] (VERIFICATION, VERIFY_RECORD_PRESENT, security_service, audit_record_9265, evidence_92)
+  [ORDER] (VERIFICATION, VERIFY_RECORD_REDACTED, support_platform, support_2351, evidence_92)
+  [MISSING] (VERIFICATION, VERIFY_RECORD_ANONYMIZED, analytics_platform, analytics_6077, evidence_92)
+  [ORDER] (VERIFICATION, VERIFY_DATA_FLOW_DISABLED, integration_service, data_flow_2337, evidence_92)
+  [ORDER] (VERIFICATION, VERIFY_RESTORE_BLOCKED, backup_service, backup_838, evidence_92)
+predicted steps:
+  [ORDER] (VERIFICATION, VERIFY_RECORD_PRESENT, security_service, audit_record_9265, evidence_92)
+  [ORDER] (VERIFICATION, VERIFY_RECORD_REDACTED, support_platform, support_2351, evidence_92)
+  [ORDER] (VERIFICATION, VERIFY_DATA_FLOW_DISABLED, integration_service, data_flow_2337, evidence_92)
+  [ORDER] (VERIFICATION, VERIFY_RESTORE_BLOCKED, backup_service, backup_838, evidence_92)
+
+case_id: case_29
+expected status: INCOMPLETE
+predicted status: INCOMPLETE
+expected steps:
+  [OK] (FINDING, REPORT_REMAINING_RECORD, search_service, search_1993, evidence_92)
+  [OK] (FINDING, REPORT_EXPOSED_PII, analytics_platform, analytics_5208, evidence_92)
+  [OK] (FINDING, REPORT_EXPOSED_PII, support_platform, support_5281, evidence_92)
+  [OK] (FINDING, REPORT_ACTIVE_DATA_FLOW, integration_service, data_flow_3827, evidence_92)
+  [OK] (REMEDIATION, DISABLE_DATA_FLOW, integration_service, data_flow_3827, )
+  [OK] (REMEDIATION, DELETE_RECORD, search_service, search_1993, )
+  [OK] (REMEDIATION, REDACT_RECORD, support_platform, support_5281, )
+  [OK] (REMEDIATION, ANONYMIZE_RECORD, analytics_platform, analytics_5208, )
+  [MISSING] (VERIFICATION, VERIFY_RECORD_ABSENT, account_service, account_7012, )
+  [ORDER] (VERIFICATION, VERIFY_RECORD_ABSENT, search_service, search_1993, )
+  [ORDER] (VERIFICATION, VERIFY_RECORD_PRESENT, security_service, audit_record_3954, )
+  [ORDER] (VERIFICATION, VERIFY_RECORD_REDACTED, support_platform, support_5281, )
+  [ORDER] (VERIFICATION, VERIFY_RECORD_ANONYMIZED, analytics_platform, analytics_5208, )
+  [ORDER] (VERIFICATION, VERIFY_DATA_FLOW_DISABLED, integration_service, data_flow_3827, )
+predicted steps:
+  [OK] (FINDING, REPORT_REMAINING_RECORD, search_service, search_1993, evidence_92)
+  [OK] (FINDING, REPORT_EXPOSED_PII, analytics_platform, analytics_5208, evidence_92)
+  [OK] (FINDING, REPORT_EXPOSED_PII, support_platform, support_5281, evidence_92)
+  [OK] (FINDING, REPORT_ACTIVE_DATA_FLOW, integration_service, data_flow_3827, evidence_92)
+  [OK] (REMEDIATION, DISABLE_DATA_FLOW, integration_service, data_flow_3827, )
+  [OK] (REMEDIATION, DELETE_RECORD, search_service, search_1993, )
+  [OK] (REMEDIATION, REDACT_RECORD, support_platform, support_5281, )
+  [OK] (REMEDIATION, ANONYMIZE_RECORD, analytics_platform, analytics_5208, )
+  [ORDER] (VERIFICATION, VERIFY_RECORD_ABSENT, search_service, search_1993, )
+  [ORDER] (VERIFICATION, VERIFY_RECORD_PRESENT, security_service, audit_record_3954, )
+  [ORDER] (VERIFICATION, VERIFY_RECORD_REDACTED, support_platform, support_5281, )
+  [ORDER] (VERIFICATION, VERIFY_RECORD_ANONYMIZED, analytics_platform, analytics_5208, )
+  [ORDER] (VERIFICATION, VERIFY_DATA_FLOW_DISABLED, integration_service, data_flow_3827, )

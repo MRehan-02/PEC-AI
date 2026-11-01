@@ -1,0 +1,2 @@
+Decide whether this customer message asks for their account or personal data to be deleted, or asks to VERIFY that a deletion was completed. Return JSON only: {"deletion_requested": true|false, "reason": "..."}. Requests to verify or confirm that data is gone count as true. Requests to keep the account, update details, export data, get invoice copies, stop marketing only, reset login, or change email count as false.
+
